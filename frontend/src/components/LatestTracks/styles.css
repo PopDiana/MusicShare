@@ -1,0 +1,24 @@
+
+.song-card {
+    width: 294px;
+    margin: 10px 10px 14px 10px;
+}
+
+.song-card p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.song-link-text {
+    color: black;
+    transition: all 250ms;
+}
+
+.song-link-text:hover {
+    color: #404098;
+}
+
+.song-user-link-text {
+    color: #C4C4C4;
+}

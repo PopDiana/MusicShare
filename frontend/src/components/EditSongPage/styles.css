@@ -1,0 +1,38 @@
+.add-edit-song {
+    align-items: center;
+    background: #404098;
+    color: white;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    padding: 45px 20px 20px;
+}
+
+.add-edit-song > div {
+    max-width: 750px;
+    width: 100%;
+}
+
+.add-edit-song form {
+    border-radius: 4px;
+    width: 100%;
+}
+
+.add-edit-song form input {
+    background: white;
+    border: 1px solid white;
+}
+
+.add-edit-song button {
+    margin-right: 10px;
+}
+
+.add-edit-song .app-form-button {
+    text-align: center;
+}
+
+.add-edit-song h2 {
+    margin-bottom: 32px;
+    text-align: center;
+}
+

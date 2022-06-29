@@ -1,0 +1,16 @@
+.app-song-details {
+    padding: 100px 10px 120px;
+}
+
+.app-song-details h2 {
+    text-align: center;
+}
+
+.app-song-details > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1260px;
+}

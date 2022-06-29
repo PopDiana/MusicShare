@@ -1,0 +1,77 @@
+.playlist-song {
+    width: 1240px;
+}
+
+#app-playlist {
+    padding-top: 0px;
+}
+
+.playlist-song-container {
+    height: 70px;
+    background-color: whitesmoke;
+    border-top: solid rgb(220, 220, 220) 0.25px;
+    box-shadow: 0 8px 8px -4px #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.playlist-song-main {
+    display: flex;
+}
+
+.playlist-song-image {
+    height: 50px;
+    width: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.playlist-song-details {
+    margin-top: 25px;
+    margin-left: 20px;
+    display:flex;
+}
+
+.playlist-song-actions {
+    display: flex;
+    margin-top: 12px;
+    margin-right: 20px;
+}
+
+#remove-song-button {
+    background: whitesmoke;
+    border: 1px solid whitesmoke;
+    margin-left: 10px;
+}
+
+#trash-icon { 
+    font-size: 20px;
+    color: grey;
+}
+
+#playlist-play-song-icon { 
+    font-size: 20px;
+    color: #404098;
+}
+
+#playlist-like-song-icon, #playlist-download-song-icon { 
+    font-size: 20px; 
+    color: black;
+}
+
+#playlist-play-button, #playlist-like-button, #playlist-download-button{
+    background: whitesmoke;
+    border: 1px solid whitesmoke;
+    margin-left: 10px;
+}
+
+.playlist-song-likes, .playlist-song-plays {
+    margin-left: 15px;
+}
+
+.playlist-song-likes i, .playlist-song-plays i {
+    margin-right: 5px;
+}

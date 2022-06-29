@@ -1,0 +1,22 @@
+.genre-one, .genre-two, .popular-users {
+    padding-left: 15px;
+    margin-top: 50px;
+}
+
+.last-list {
+    margin-bottom: 70px; 
+}
+
+.most-liked h4, .genre-one h4, .genre-two h4, .popular-users h4 {
+    color: grey;
+}
+
+#most-liked-songs, #genre-one, #genre-two, #popular-users-profiles {
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.most-liked {
+    margin-top: 100px;
+    padding-left: 15px;
+}

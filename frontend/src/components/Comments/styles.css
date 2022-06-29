@@ -1,0 +1,50 @@
+.comments-number {
+    margin-top: 20px;
+    margin-left: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    width: 87%;
+}
+
+.comments-section {
+    width: 65%;
+    margin-left: 20px;
+}
+
+.comment-header {
+    font-size: 14px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.comment-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 10px;
+}
+
+.comment-header {
+    display: inline-flex;
+    width: 87%;
+    color: grey;
+    align-items:center;
+}
+
+.comment-body {
+    width: 87%;
+}
+
+.edit-comment-button, .delete-comment-button {
+    border: none;
+    background-color: white;
+    color: grey;
+}
+
+.edit-comment-button, .delete-comment-button{
+    padding: 0 5px;
+}
+
+.comment-date {
+    padding-left: 5px;
+}

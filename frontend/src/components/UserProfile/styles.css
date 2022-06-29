@@ -1,0 +1,134 @@
+.app-user-profile {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 140px 20px 0px 20px;
+}
+
+.profile-image-large {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0px 1px 30px #ccc;
+}
+
+.app-user-profile h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.app-user-profile h3 {
+    margin-bottom: 30px;
+    background:  #404098;
+    padding: 2px 7px;
+    width: fit-content;
+    color: white;
+}
+
+.app-user-profile > p {
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+.app-user-profile button {
+    margin-bottom: 35px;
+}
+
+.modal-cancel-button {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.app-playlist {
+    box-shadow: 0.5rem 0.5rem grey, -0.5rem -0.5rem #ccc;
+}
+
+.user-profile-tab {
+    margin-top: 50px;
+}
+
+.user-profile-tabs {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1260px;
+}
+
+.user-profile-tabs button {
+    background-color: white;
+    border: none;
+    color: black;
+    font-size: 25px;
+    border-radius: 0%;
+}
+
+.user-profile-tabs button:hover {
+    background-color: #404098;
+    color: white;
+}
+
+#user-uploaded-button.tab-selected,
+#user-playlists-button.tab-selected,
+#user-likes-button.tab-selected,
+#user-following-button.tab-selected,
+#user-history-button.tab-selected   {
+    background-color: #404098;
+    color: white;
+}
+
+.song-following-user-link-text {
+    color: black;
+}
+
+.secret-playlist {
+    color: grey;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+#user-followers-text {
+    background: grey;
+}
+
+.user-check {
+    color: green !important;
+    font-size: 70%;
+}
+
+.display-none {
+    display: none;
+}
+
+#clear-history {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#clear-history button {
+    width: 200px;
+}
+
+.shuffle-button {
+    background-color: green;
+    border-color: green;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.shuffle-button i{
+    margin-right: 5px;
+}
+
+.add-playlist-button {
+    margin-left: 10px;
+}
+
+#user-uploaded-button {
+    margin-left: 15px;
+}

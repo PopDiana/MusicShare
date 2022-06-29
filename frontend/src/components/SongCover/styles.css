@@ -1,0 +1,79 @@
+.song-portal-large {
+    margin: 0 auto;
+    max-width: 1240px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.song-portal-large > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 20px 20px;
+}
+
+.song-portal-large h2, .song-portal-large h3 {
+    background: white;
+    padding: 0 6px;
+    width: fit-content;
+}
+
+.song-portal-large h4 { 
+    color: white;
+    background: #404098;
+    padding: 0 10px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.song-portal-large h2 {
+    font-size: 42px;
+}
+
+.song-portal-large h3 {
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.song-portal-large h4 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.portal-song-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.portal-edit-button, .portal-like-button, .portal-add-to-playlist-button {
+    margin-right: 10px;
+}
+
+.song-user-link {
+    color: black;
+}
+
+.song-user-link h3 {
+    display: inline-block;
+}
+
+.song-backdrop-container {
+    backdrop-filter: blur(10px);
+}
+
+.playlist {
+    padding: 7px 6px;
+    border-radius: 4px;
+}
+
+#edit-song-button, #delete-song-button {
+    background: #404098;
+    border: #404098;
+}
+
+#edit-song-button:hover, #delete-song-button:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}

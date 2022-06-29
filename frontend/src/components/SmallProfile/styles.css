@@ -1,0 +1,19 @@
+.border-right-grey {
+    border-right: 1px solid #ccc;
+    width: 20%;
+}
+
+.align-row {
+    flex-direction: row;
+
+}
+
+.song-details-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left: 20%;
+}

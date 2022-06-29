@@ -1,0 +1,10 @@
+#edit-user-profile-button {
+    background: #404098;
+    border: 1px solid #404098;
+}
+
+#edit-user-profile-button:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}

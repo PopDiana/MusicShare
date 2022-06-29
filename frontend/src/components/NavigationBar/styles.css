@@ -1,0 +1,95 @@
+nav {
+    background: white;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 30%), 0 20px 48px rgb(0 0 0 / 16%), 0 1px 4px rgb(0 0 0 / 12%);
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 10;
+}
+
+nav > div {
+    display: flex;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    align-items: stretch;
+    display: flex;
+}
+
+.nav-left {
+    display: flex;
+    width: 100%;
+}
+
+.nav-left li {
+    display: flex;
+}
+
+.nav-left a {
+    border-right: 1px solid #ccc;
+    color: black;
+    padding: 12px 20px;
+    transition: all 250ms;
+}
+
+.nav-left a:hover {
+    background: #404098;
+    color: white;
+}
+
+.nav-right button {
+    margin-left: 10px;
+}
+
+.nav-right button:first-child {
+    background: white;
+    color: black;
+}
+
+.nav-right button:first-child:hover {
+    border: 1px solid #404098;
+    color: #404098;
+}
+
+.nav-right button:last-child {
+    background: white;
+    border: none;
+    color: black;
+    padding: 0;
+}
+
+.nav-right button:last-child:hover {
+    color: #404098;
+}
+
+.nav-right li {
+    display: flex;
+    position: relative;
+}
+
+.active {
+    color: black;
+}
+
+.nav-app-title a {
+    background: #404098;
+    color: white;
+    display: flex;
+}
+
+.nav-app-title a:hover {
+    background: black;
+    color: white;
+}
+
+
+@media screen and (max-width: 1260px) {
+    nav {
+        padding-right: 20px;
+    }
+}

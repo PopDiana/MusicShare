@@ -1,0 +1,8 @@
+.secret-playlist-checkbox-input {
+    flex-direction: row !important;
+}
+
+#make-secret {
+    margin-right: 5px;
+    margin-top: 3px;
+}

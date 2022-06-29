@@ -1,0 +1,58 @@
+#playlist-description {
+    color: white;
+    background: unset;
+    border-radius: unset;
+    margin-top: 30px;
+    padding: 0px;
+}
+
+#playlist-is-secret {
+    margin-bottom: 10px;
+    background: #ccc;
+}
+
+#playlist-is-secret i {
+    font-size: 17px;
+}
+
+.playlist-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.playlist-container {
+    backdrop-filter: blur(10px);
+}
+
+.playlist-user-link {
+    color: black;
+    margin-left: 5px;
+}
+
+.playlist-user-link h3 {
+    display: inline-block;
+}
+
+.playlist-image-large {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 340px;
+    width: 340px;
+}
+
+#edit-playlist-button, #delete-playlist-button {
+    background: #404098;
+    border: #404098;
+}
+
+#edit-playlist-button:hover, #delete-playlist-button:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+#delete-playlist-button {
+    margin-right: 10px;
+}

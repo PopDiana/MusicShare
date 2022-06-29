@@ -1,0 +1,68 @@
+.audio-player-container {
+    background: white;
+    bottom: 0;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 30%), 0 20px 48px rgb(0 0 0 / 16%), 0 1px 4px rgb(0 0 0 / 12%);
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.app-audio-player {
+    border-right: 1px solid black;
+    box-shadow: none;
+}
+
+.app-audio-player:focus {
+    outline: none;
+}
+
+.app-player-content {
+    align-items: center;
+    display: flex;
+    padding: 0 20px;
+    width: 30%;
+}
+
+.song-art-small {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+}
+
+.song-details-small {
+    margin-left: 10px;
+}
+
+.song-username-small {
+    color: #C4C4C4;
+    font-size: 13px;
+}
+
+.song-title-small {
+    font-size: 14px;
+}
+
+.tester .rhap_main .rhap_stacked {
+    flex: none !important;
+    flex-direction: row-reverse !important;
+}
+
+.tester.rhap_progress-section {
+    margin-left: 20px;
+}
+
+.tester .rhap_controls-section {
+    flex: none;
+    margin: 0;
+}
+
+.tester .rhap_main-controls {
+    margin-right: 8px;
+}
+
+.rhap_volume-controls {
+    width: 100px;
+}

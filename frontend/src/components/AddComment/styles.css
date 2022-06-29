@@ -1,0 +1,22 @@
+#add-comment-form {
+    padding: 0;
+    width: 87%;
+    justify-content: flex-start;
+}
+
+#add-comment-form > div {
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+#add-comment-form input {
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: 8px;
+    outline: none;
+    padding: 4px 32px 4px 8px;
+    transition: border 200ms;
+    width: 100%;
+}
