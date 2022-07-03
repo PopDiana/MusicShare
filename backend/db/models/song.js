@@ -38,6 +38,15 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.BOOLEAN,
       allowNull: true
     },
+    createdAt: {
+      allowNull: false,
+      type: DataTypes.DATE,
+      get: function () {
+        return this.getDataValue('createdAt')
+          .toLocaleDateString('en-GB',
+            {year: 'numeric'});
+      }
+    },
   }, {});
   Song.associate = function(models) {
     Song.hasMany(models.Comment, {foreignKey: 'songId', onDelete: 'CASCADE', hooks: true});

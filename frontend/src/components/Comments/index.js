@@ -76,7 +76,7 @@ const Comments = () => {
                                 Delete(comment?.id) : {}}>
                                     <i className='fa fa-trash'></i>
                                 </button>
-                                <span className='comment-date'>{comment?.createdAt}</span>
+                                <span className='comment-date'>{comment?.updatedAt}</span>
 
                             </div>
                         </div>

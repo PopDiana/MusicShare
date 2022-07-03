@@ -10,13 +10,13 @@ import { getAllSongs, likeSong, unlikeSong } from '../../store/songs';
 import './styles.css';
 
 const SongCover = () => {
-    
+
     const { songId } = useParams();
     const user = useSelector(state => (state.session.user));
-    const songs= useSelector(state => (state.songs));
+    const songs = useSelector(state => (state.songs));
     const song = songs[songId];
     var playingSong = useSelector(state => (state.player.songId));
-    var isPlaying = useSelector(state => (state.player.isPlaying));   
+    var isPlaying = useSelector(state => (state.player.isPlaying));
     const history = useHistory();
     const dispatch = useDispatch();
     const [displayModal, setModalDisplay] = useState(false);
@@ -35,7 +35,7 @@ const SongCover = () => {
     }, [dispatch]);
 
     const pause = () => {
-        dispatch(pauseSong()); 
+        dispatch(pauseSong());
     }
 
     const edit = (songId) => {
@@ -89,21 +89,20 @@ const SongCover = () => {
                     <i className="fa fa-download"></i> Download</button>
             </>
         );
-    }   
+    }
 
     return (
         <div className='song-portal-large' style={{ backgroundImage: 'url(' + song?.imageUrl + ')' }}>
             <div className='song-backdrop-container'>
                 <div className='portal-song-details'>
                     <div>
-                        <button className='play-button' onClick={() => playingSong === song.id && isPlaying? pause() :  play(song)}>
+                        <button className='play-button' onClick={() => playingSong === song.id && isPlaying ? pause() : play(song)}>
                             <i className={`fas ${playingSong === song?.id && isPlaying ? "fa-pause" : "fa-play"}`}></i>
                         </button>
                         <div>
                             <h2>{song?.title}</h2>
-                            <Link className='song-user-link' to={{ pathname: `/users/${song?.User.id}` }}>
-                                <h3>{song?.User.username}</h3>
-                            </Link>
+                            <h3><Link className='song-user-link' to={{ pathname: `/users/${song?.User.id}` }}>{song?.User.username}</Link>
+                            &nbsp;-&nbsp;{song?.createdAt}</h3>
                             <Link to={{ pathname: `/genre/${song?.Genre.name}` }}><h4>{song?.Genre?.name}</h4></Link>
                         </div>
                     </div>
@@ -120,7 +119,5 @@ const SongCover = () => {
         </div>
     );
 };
-
-
 
 export default SongCover;

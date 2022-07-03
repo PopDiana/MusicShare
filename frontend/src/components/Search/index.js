@@ -32,7 +32,7 @@ const Search = () => {
         <div className='search-container'>
             <form className='app-search-form'>
                 <div>
-                    <input type='text' placeholder='Search for an artist or song...' 
+                    <input type='text' placeholder='Search for a song, artist or genre...' 
                     value={search} onClick={() => setResults('results')} onBlur={() => setResults('')} onChange={(e) => setSearch(e.target.value)}/>
                     <i className="fas fa-search search-button"></i>
                 </div>
