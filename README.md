@@ -1,30 +1,31 @@
 ## Database setup
 
-In **appsettings.json** modify the connections string:
+Run migrations and seed data with:
+
+`npx sequelize-cli db:migrate`
+`npx sequelize-cli db:seed:all`
+
+Undo seed and migrations:
+
+`npx sequelize-cli db:seed:undo:all`
+`npx sequelize-cli db:migrate:undo:all`
+
+## Run project
+ In the project root folder:
+ 
+`npm install`
+
+- Node.js API:
 
 ```
-"ApiConnection": "Host=localhost;Database=musicshareapi;Username=postgres;Password=postgres;",
-"MusicShareConnection": "Host=localhost;Database=musicshare;Username=postgres;Password=postgres;",
-"HangfireConnection": "Server=*****\\SQLEXPRESS;Database=HangfireTest;Trusted_Connection=True;MultipleActiveResultSets=true"
+cd backend
+npm run start:development
 ```
 
-Powershell (add a new migration):
+- React App:
 
 ```
-$ add-migration migrationName
-$ update-database
+cd frontend
+npm start
 ```
 
-If necessary, remove the latest migration with:
-
-`$ remove-migration`
-
-Also modify mail credentials settings:
-
-```
- "Mail": {
-    "Address": "*****",
-    "DisplayName": "*****",
-    "Password": "*****"
-  }
-```
