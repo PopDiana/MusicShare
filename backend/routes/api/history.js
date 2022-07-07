@@ -9,6 +9,21 @@ const router = express.Router();
 
 
 router.get('/:userId(\\d+)', asyncHandler(async (req, res) => {
+
+    const listeningHistory = await History.findAll({
+        where: { userId: req.params.userId }, include: [{
+            model: Song, where: {
+                available: false
+            }
+        }]
+    });
+
+    if (listeningHistory) {
+        await listeningHistory.forEach(element => {
+            element.destroy();
+        });
+    }
+
     const history = await History.findAll({
         order: [['createdAt', 'DESC']],
         include: [{

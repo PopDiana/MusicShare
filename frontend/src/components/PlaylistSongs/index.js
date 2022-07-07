@@ -55,6 +55,10 @@ const PlaylistSongs = () => {
         return null;
     } 
 
+    songs?.sort((a, b) => {
+        return ('' + a.title).localeCompare(b.title);
+    })
+
     return (
         <div className='app-list' id="app-playlist">
             <div>

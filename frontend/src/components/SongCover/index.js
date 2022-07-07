@@ -103,7 +103,7 @@ const SongCover = () => {
                             <h2>{song?.title}</h2>
                             <h3><Link className='song-user-link' to={{ pathname: `/users/${song?.User.id}` }}>{song?.User.username}</Link>
                             &nbsp;-&nbsp;{song?.createdAt}</h3>
-                            <Link to={{ pathname: `/genre/${song?.Genre.name}` }}><h4>{song?.Genre?.name}</h4></Link>
+                            <Link to={{ pathname: `/genre/${song?.Genre?.name}` }}><h4>{song?.Genre?.name}</h4></Link>
                         </div>
                     </div>
                     <div>
